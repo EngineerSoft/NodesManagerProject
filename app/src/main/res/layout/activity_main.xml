@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/icon_logo" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/connectPortCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="@color/blue"
+        app:cardElevation="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:text="Connecter le port Sérial"
+            android:textColor="@color/white"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/keysCard"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/blue"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp">
+
+
+            <TextView
+                android:id="@+id/bleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_card_config"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nodesCard"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="@color/blue"
+            app:cardElevation="12dp">
+
+            <TextView
+                android:id="@+id/localText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:text="@string/main_card_node"
+                android:textColor="@color/white"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    </LinearLayout>

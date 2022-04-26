@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NodesConfigActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nodes_text_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="25dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nodes_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_settings_remote"
+            android:drawablePadding="20dp"
+            android:hint="Nombre des compteurs"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/portText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Le port sérial est connecté"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"/>
+    <Button
+        android:id="@+id/connectPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Connecter le port Sérial"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/ic_settings_input" />
+
+    <Button
+        android:id="@+id/configNode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Configurer"
+        android:background="@drawable/btn_custom"/>
+
+</LinearLayout>

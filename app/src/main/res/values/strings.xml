@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Application Gestion des Noeuds</string>
+    <string name="login_header_title">AUTHENTIFICATION</string>
+    <string name="login_header_info">Connectez-vous avec vos coordonnées LoRaServer</string>
+    <string name="login_name_hint">Nom d"'"utilisateur</string>
+    <string name="login_pswd_hint">Mot de passe</string>
+    <string name="login_btn">Login</string>
+    <string name="main_card_config">Configuration Clés LoRaWAN</string>
+    <string name="main_card_node">Configuration Capteurs</string>
+
+
+</resources>
